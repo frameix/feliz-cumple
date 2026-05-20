@@ -18,6 +18,7 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Organización del repositorio
 
 - `Made/` es el código fuente del proyecto. Ahí está tu aplicación React con toda la lógica, componentes y configuración de Vite.
+- `Made/` es el código fuente del proyecto. Ahí está tu aplicación React con toda la lógica, componentes y configuración de Vite. El archivo `index.html` dentro de `Made/` sirve para ejecutar el proyecto en desarrollo con `npm run dev` localmente.
 - `docs/` es solo el build estático que GitHub Pages puede servir desde el branch `main` si eliges `/docs` como fuente.
 
 ### Cómo organizar varias webs en un solo repo
