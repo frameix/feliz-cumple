@@ -14,3 +14,28 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Organización del repositorio
+
+- `Made/` es el código fuente del proyecto. Ahí está tu aplicación React con toda la lógica, componentes y configuración de Vite.
+- `docs/` es solo el build estático que GitHub Pages puede servir desde el branch `main` si eliges `/docs` como fuente.
+
+### Cómo organizar varias webs en un solo repo
+
+Puedes mantener varios proyectos fuente separados, por ejemplo:
+
+- `Made/`
+- `Pedro/`
+
+Y sus builds organizados dentro de `docs/`, por ejemplo:
+
+- `docs/Made/`
+- `docs/Pedro/`
+
+De ese modo, GitHub Pages puede servir:
+
+- `https://frameix.github.io/feliz-cumple/Made/`
+- `https://frameix.github.io/feliz-cumple/Pedro/`
+
+Recuerda que GitHub Pages solo publica la carpeta que elijas (`/docs` o `/root`), no el código fuente directo de `Made/`.
+
