@@ -33,14 +33,21 @@ export default function AudioPlayer({ isUnlocked, onUnlock, songs = [] }) {
 
   // Disc spin animation
   useEffect(() => {
-    if (isPlaying && discRef.current) {
-      discAnimRef.current = anime({
-        targets: discRef.current,
-        rotate: '360deg',
-        duration: 8000,
-        easing: 'linear',
-        loop: true
-      });
+    if (!discRef.current) return;
+
+    if (isPlaying) {
+      if (discAnimRef.current) {
+        discAnimRef.current.play();
+      } else {
+        discAnimRef.current = anime({
+          targets: discRef.current,
+          rotate: '360deg',
+          duration: 8000,
+          easing: 'linear',
+          loop: true,
+          autoplay: true,
+        });
+      }
     } else if (discAnimRef.current) {
       discAnimRef.current.pause();
     }

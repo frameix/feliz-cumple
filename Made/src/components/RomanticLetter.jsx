@@ -9,7 +9,7 @@ export default function RomanticLetter({ isUnlocked }) {
   const containerRef = useRef(null);
 
   const romanticMessage =
-    "No puedo creer que ya pasó otro año y aquí seguimos mi vida, no soy muy bueno con las palabras largas jsjsjs, pero por ti hago la excepción. " +
+    "No puedo creer que ya pasó otro año y aquí seguimos vivitos xd, no soy muy bueno con las palabras largas jsjsjs, pero por ti hago la excepción. " +
     "Cariño hoy tienes terminantemente prohibido estresarte por la universidad, ¿va? Ya sé que te trae loca y que los parciales orales te ponen súper nerviosa (mi futura profe de inglés :3), pero hoy nada de eso. Ademas yo soy el único que te debe traer loca beibe, grrr jskjsjskjskj. " +
     "Bb quiero que comas bien, para que no se te baje el azúcar y te me desmayes por ahí. ¡come, porfis!. " +
     "Me encantas y me encanta ver cómo te crece tu cabello largo, cómo te ves adulta con tus \"brackets\" y hasta cuando te pones cieguita porque no encuentras tus gafas. " +
